@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #5a3a3a;
+  text-align: center;
+  overflow: hidden;
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Opening Screen */
+#opening-screen h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#opening-screen p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* Next Button */
+.next-button {
+  background: #ff6f61;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.next-button:hover {
+  background: #ff4a3d;
+}
+
+/* Full-Screen Picture */
+#picture-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper {
+  height: 4in; /* Set height to 4 inches */
+  width: auto; /* Maintain aspect ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 5px solid #ff6f61; /* Optional: Add a border */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}
+
+.cherished-picture {
+  height: 100%; /* Make the image fill the wrapper */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Proposal Screen */
+#proposal-screen h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+#yes-button {
+  background: #ff6f61;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#no-button {
+  background: #e0e0e0;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #5a3a3a;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Celebration Screen */
+#celebration-screen {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#celebration-screen h2 {
+  font-size: 4rem;
+  color: #ff6f61;
+}

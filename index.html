@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine, Lili?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Opening Screen -->
+  <section id="opening-screen" class="screen">
+    <div class="content">
+      <h1>My dearest Lili,</h1>
+      <p>I couldn't sleep last night because I knew I hadn't asked you to be my Valentine.</p>
+      <button class="next-button">Next</button>
+    </div>
+  </section>
+
+  <!-- Full-Screen Picture -->
+  <section id="picture-screen" class="screen hidden">
+    <div class="image-wrapper">
+      <img src="your-picture.jpg" alt="Our cherished moment" class="cherished-picture">
+    </div>
+    <button class="next-button">Next</button>
+  </section>
+
+  <!-- Valentine's Proposal Page -->
+  <section id="proposal-screen" class="screen hidden">
+    <h2>Lili, will you be my Valentine?</h2>
+    <div class="buttons">
+      <button id="yes-button">Yes!</button>
+      <button id="no-button">No</button>
+    </div>
+  </section>
+
+  <!-- Celebration Screen -->
+  <section id="celebration-screen" class="screen hidden">
+    <h2>I love you, Lili!</h2>
+  </section>
+
+  <!-- Background Music -->
+  <audio id="background-music" loop>
+    <source src="your-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
